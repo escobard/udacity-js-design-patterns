@@ -14,4 +14,4 @@
         document.getElementById("clicks2").innerHTML = clicks2;
     };
 	
-document.getElementById("parentID").appendChild();
+document.getElementById("cat-1").appendChild();
