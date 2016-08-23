@@ -1,3 +1,18 @@
-ul.nav.nav-pills.pull-right {
-    margin-top: 8px;
+.jumbotron {
+    max-width: 760px;
+    float: none;
+    margin: auto;
+    text-align: center;
 }
+
+.header.clearfix {
+    max-width: 760px;
+    float: none;
+    margin: auto;
+}
+
+footer.footer {
+    text-align: center;
+}
+
+.jumbotron img {margin-top: 20px;margin-bottom: 20px;}
