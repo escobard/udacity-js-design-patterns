@@ -16,7 +16,7 @@ footer.footer {
 	margin-top:20px;
 }
 
-.jumbotron img {margin-top: 20px;margin-bottom: 20px;cursor: pointer;}
+.jumbotron img {margin-top: 20px;margin-bottom: 20px;cursor: pointer;max-width: 100%;}
 
 ul.nav.nav-pills.pull-right {
     margin-top: 8px;
