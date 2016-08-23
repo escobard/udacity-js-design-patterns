@@ -11,18 +11,21 @@
     margin: auto;
 }
 
-footer.footer {
+.footer {
     text-align: center;
 	margin-top:20px;
 }
 
 .jumbotron img {margin-top: 20px;margin-bottom: 20px;cursor: pointer;max-width: 100%;}
 
-ul.nav.nav-pills.pull-right {
+.nav.nav-pills.pull-right {
     margin-top: 8px;
 }
-span#clicks {
+#clicks {
     color: #2196F3;
     font-weight: bold;
-    transition: 1s ease all;
+}
+#clicks2 {
+	    color: #2196F3;
+    font-weight: bold;
 }

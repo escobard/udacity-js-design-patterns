@@ -8,10 +8,10 @@
 	
 // Second Cat Click function
 
- var clicks = 0;
+ var clicks2 = 0;
     function catClicked2() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
+        clicks2 += 1;
+        document.getElementById("clicks2").innerHTML = clicks2;
     };
 	
 document.getElementById("parentID").appendChild();
