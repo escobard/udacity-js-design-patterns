@@ -3,8 +3,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Cat clicker assignment for the JavaScript Design Patterns course Udacity ">
+    <meta name="author" content="Daniel Escobar">
 
     <title>Cat Clicker - Udacity Prototype - v 0.1</title>
 
@@ -35,6 +35,15 @@
         <h1>Cat clicker main</h1>
         <p class="lead">Click the image below to increase your click count.</p>
         <img src="img/cat-picture.jpg"></img>
+		    <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+		<button type="button" onClick="onClick()">Click me</button>
+    <h2>Clicks: <span id="clicks">0</span> </h2>
       </div>
 
       <footer class="footer">
