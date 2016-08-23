@@ -6,12 +6,12 @@
     <meta name="description" content="Cat clicker assignment for the JavaScript Design Patterns course Udacity ">
     <meta name="author" content="Daniel Escobar">
 
-    <title>Cat Clicker - Udacity Prototype - v 0.1</title>
+    <title>Cat Clicker - Udacity Prototype - v1.0</title>
 
     <!-- Bootstrap core CSS -->
     <link href=".//css/bootstrap.min.css" rel="stylesheet">
 	<link href=".//css/style.css" rel="stylesheet">
-
+	<script src="js/cat-clicker.js" type="text/javascript"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -28,22 +28,14 @@
             <li role="presentation" class="active"><a href="#">Home</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Cat Clicker - Udacity Prototype - v 0.1</h3>
+        <h3 class="text-muted">Cat Clicker - Udacity Prototype - v1.0</h3>
       </div>
 
       <div class="jumbotron">
         <h1>Cat clicker main</h1>
         <p class="lead">Click the image below to increase your click count.</p>
-        <img src="img/cat-picture.jpg"></img>
-		    <script type="text/javascript">
-    var clicks = 0;
-    function onClick() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-    </script>
-		<button type="button" onClick="onClick()">Click me</button>
-    <h2>Clicks: <span id="clicks">0</span> </h2>
+        <img onClick="catClicked()" src="img/cat-picture.jpg"></img>
+		<h2>Clicks: <span id="clicks">0</span> </h2>
       </div>
 
       <footer class="footer">
@@ -52,5 +44,5 @@
 
     </div> <!-- /container -->
 
-
+<!-- Copyright of Daniel Escobar, August 22nd, 2016 -->
 </body></html>
