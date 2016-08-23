@@ -1,0 +1,11 @@
+How hard was it ?
+
+Easy
+
+How do you feel about your code ?
+
+Fairly well, I spent a bit of time making this assignment just for fun, and sent it to a bunch of friends to bug them. Had lots of fun with this one. In terms of difficulty, it was fairly easy to create a web app of this caliber, due to my previous javascript experience. I hope there are more challenging projects on this course moving forward. 
+
+How many times have you clicked your cat?
+
+Over 9000.
