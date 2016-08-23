@@ -13,5 +13,7 @@
         clicks2 += 1;
         document.getElementById("clicks2").innerHTML = clicks2;
     };
-	
-document.getElementById("cat-1").appendChild();
+
+// First Cat Click function
+var d1 = document.getElementById('one');
+d1.insertAdjacentHTML('afterend', '<div id="two">two</div>');
