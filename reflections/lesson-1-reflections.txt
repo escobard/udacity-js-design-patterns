@@ -1,3 +1,5 @@
+Reflections #1:
+
 How hard was it ?
 
 Easy
@@ -5,6 +7,24 @@ Easy
 How do you feel about your code ?
 
 Fairly well, I spent a bit of time making this assignment just for fun, and sent it to a bunch of friends to bug them. Had lots of fun with this one. In terms of difficulty, it was fairly easy to create a web app of this caliber, due to my previous javascript experience. I hope there are more challenging projects on this course moving forward. 
+
+How many times have you clicked your cat?
+
+Over 9000.
+
+Reflections #2:
+
+How hard was it ?
+
+Medium.
+
+How do you feel about your code ?
+
+I think I could be more efficient on creating this project purely through javascript if that was the assignemnt from the start. Since it wasn't, I used a mixture of HTML, CSS, and JS solutions to get the job done efficiently. I am trying to use mostly javscript for this course, as I am much more experienced with jQuery, and need the practice using vanialla JS to better learn how other JS libraries other from jQuery work. Avoiding dom re-parsing is much easier to do with jQuery; with JS, I had to learn how to apply event listeners to my code, initially using a window.load function which did not work to well. I could have created this entire app in javascript using event listeners, but since the original assignment did not require it, it would be inefficient to re-create the entire project purely in JS. I would have created a more efficient, and advanced cat duplication method than I did this time around. 
+
+Happy with your cat duplication ?
+
+No.
 
 How many times have you clicked your cat?
 
