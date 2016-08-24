@@ -1,0 +1,41 @@
+.jumbotron {
+    max-width: 760px;
+    float: none;
+    margin: auto;
+    text-align: center;
+}
+
+.header.clearfix {
+    max-width: 760px;
+    float: none;
+    margin: auto;
+}
+
+.footer {
+    text-align: center;
+	margin-top:20px;
+}
+
+.jumbotron img {margin-top: 20px;margin-bottom: 20px;cursor: pointer;max-width: 100%;}
+
+.nav.nav-pills.pull-right {
+    margin-top: 8px;
+}
+#clicks {
+    color: #2196F3;
+    font-weight: bold;
+}
+#clicks2 {
+	    color: #E91E63;
+	    font-weight: bold;
+}#cat-title-1 {
+    color: #4CAF50;
+}
+
+.cat-title h1 {
+    font-weight: bold;
+}
+
+#cat-title-2 {
+    color: #795548;
+}

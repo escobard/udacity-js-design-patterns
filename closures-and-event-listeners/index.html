@@ -1,0 +1,56 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Cat clicker assignment for the JavaScript Design Patterns course Udacity ">
+    <meta name="author" content="Daniel Escobar">
+
+    <title>Cat Clicker - Udacity Prototype - v2.0</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href=".//css/bootstrap.min.css" rel="stylesheet">
+	<link href=".//css/style.css" rel="stylesheet">
+	
+	<!-- Cat clicker main JS -->
+	<script src="js/cat-clicker.js" type="text/javascript"></script>
+	<script src="js/closures-and-events.js" type="text/javascript"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Cat Clicker - Udacity Prototype - v2.0</h3>
+      </div>
+
+      <div class="jumbotron">
+	  <div id="cat-1">
+        <p class="lead">Click the image below to increase your click count.</p>
+        <img onClick="catClicked()" src="img/cat-picture.jpg"></img>
+		<h2>Clicks: <span id="clicks">0</span> </h2> </div>
+		<div id="cat-2">
+		<p class="lead">Click the image below to increase your click count.</p>
+        <img onClick="catClicked2()" src="img/cat2-picture.jpg"></img>
+		<h2>Clicks: <span id="clicks2">0</span> </h2> </div>
+		</div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2016</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+<!-- Copyright of Daniel Escobar, August 22nd, 2016 -->
+</body></html>
