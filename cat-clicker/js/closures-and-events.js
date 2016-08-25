@@ -1,6 +1,5 @@
 // clear the screen for testing
 document.body.innerHTML = '';
-document.body.style.background="white";
 
 var nums = [1,2,3];
 
@@ -15,10 +14,11 @@ for (var i = 0; i < nums.length; i++) {
     elem.textContent = num;
 
     // ... and when we click, alert the value of `num`
-    elem.addEventListener('click', function() {
-        alert(num);
-    });
+    elem.addEventListener('click', (function(numCopy) {
+        return function() {
+            alert(numCopy);
+        };
+    })(num));
 
-    // finally, let's add this element to the document
     document.body.appendChild(elem);
 };
