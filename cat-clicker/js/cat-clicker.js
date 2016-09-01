@@ -19,23 +19,32 @@ var catContainerIntro = document.createElement("p")
 var catContainerIntroText = document.createTextNode("Click the image below to increase your click count.")
 var catContainerImg = document.createElement("img")
 var list = document.getElementById("cat-1");
+var catClickContainer = document.createElement("div");
 var catSecondaryTitleElement = document.createElement("H2");
 var catSecondaryTitleText = document.createTextNode('Clicks:');
-// attributes
+var catClickCounter = document.createElement("span")
+var catClickNumber = document.createTextNode('0');
+
+// Attributes
 catContainerIntro.setAttribute("class", "cat-title");
 catTitleContainer.setAttribute("id", "cat-title-1");
 catTitleContainer.setAttribute("class", "cat-title");
 catContainerImg.setAttribute("src", "img/cat-picture.jpg");
 catContainerImg.setAttribute("onClick", "catClicked()");
+catClickCounter.setAttribute("id", "clicks");
+catClickContainer.setAttribute("class", "click-container");
 
-// append childs
+// Append childs
 catContainerIntro.appendChild(catContainerIntroText);
 catTitleContainer.appendChild(catTitleElement);
 catTitleElement.appendChild(catTitleText);
 catSecondaryTitleElement.appendChild(catSecondaryTitleText);
+catSecondaryTitleElement.appendChild(catClickCounter);
+catClickCounter.appendChild(catClickNumber);
+catClickContainer.appendChild(catSecondaryTitleElement);
 
 //list nodes
-list.insertBefore(catSecondaryTitleElement, list.childNodes[0])
+list.insertBefore(catClickContainer, list.childNodes[0])
 list.insertBefore(catContainerImg, list.childNodes[0])	
 list.insertBefore(catContainerIntro, list.childNodes[0]);
 list.insertBefore(catTitleContainer, list.childNodes[0]); 
