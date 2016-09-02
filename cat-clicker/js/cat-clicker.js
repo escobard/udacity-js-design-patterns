@@ -1,13 +1,5 @@
 // global container variables
 
-// First Cat Click function
-
- var clicks = 0;
-    function catClicked() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-
 // First Cat function	
 function cat1() {
 	
@@ -43,7 +35,7 @@ catSecondaryTitleElement.appendChild(catClickCounter);
 catClickCounter.appendChild(catClickNumber);
 catClickContainer.appendChild(catSecondaryTitleElement);
 
-//list nodes
+// Nodes
 list.insertBefore(catClickContainer, list.childNodes[0])
 list.insertBefore(catContainerImg, list.childNodes[0])	
 list.insertBefore(catContainerIntro, list.childNodes[0]);
@@ -51,7 +43,58 @@ list.insertBefore(catTitleContainer, list.childNodes[0]);
 
 }
 window.addEventListener("load", cat1, false);
+// First Cat Click function
+
+ var clicks = 0;
+    function catClicked() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+
+
+// Second Cat function	
+function cat2() {
 	
+// Variables
+var catTitleContainer2 = document.createElement("div");
+var catTitleElement2 = document.createElement("H1");
+var catTitleText2 = document.createTextNode('Nacho');
+var catContainerIntro2 = document.createElement("p")
+var catContainerIntroText2 = document.createTextNode("Click the image below to increase your click count.")
+var catContainerImg2 = document.createElement("img")
+var list2 = document.getElementById("cat-2");
+var catClickContainer2 = document.createElement("div");
+var catSecondaryTitleElement2 = document.createElement("H2");
+var catSecondaryTitleText2 = document.createTextNode('Clicks:');
+var catClickCounter2 = document.createElement("span")
+var catClickNumber2 = document.createTextNode('0');
+
+// Attributes
+catContainerIntro2.setAttribute("class", "cat-title");
+catTitleContainer2.setAttribute("id", "cat-title-2");
+catTitleContainer2.setAttribute("class", "cat-title");
+catContainerImg2.setAttribute("src", "img/cat2-picture.jpg");
+catContainerImg2.setAttribute("onClick", "catClicked2()");
+catClickCounter2.setAttribute("id", "clicks2");
+catClickContainer2.setAttribute("class", "click-container");
+
+// Append childs
+catContainerIntro2.appendChild(catContainerIntroText2);
+catTitleContainer2.appendChild(catTitleElement2);
+catTitleElement2.appendChild(catTitleText2);
+catSecondaryTitleElement2.appendChild(catSecondaryTitleText2);
+catSecondaryTitleElement2.appendChild(catClickCounter2);
+catClickCounter2.appendChild(catClickNumber2);
+catClickContainer2.appendChild(catSecondaryTitleElement2);
+
+// Nodes
+list2.insertBefore(catClickContainer2, list2.childNodes[0])
+list2.insertBefore(catContainerImg2, list2.childNodes[0])	
+list2.insertBefore(catContainerIntro2, list2.childNodes[0]);
+list2.insertBefore(catTitleContainer2, list2.childNodes[0]); 
+
+}
+window.addEventListener("load", cat2, false);
 
 // Second Cat Click function
 
@@ -60,21 +103,7 @@ window.addEventListener("load", cat1, false);
         clicks2 += 1;
         document.getElementById("clicks2").innerHTML = clicks2;
     };
-
-// Second Cat Title function	
-function catTitle2() {
-	var catTitleContainer2 = document.createElement("div");
-    var catTitleElement2 = document.createElement("H1");
-    var catTitleText2 = document.createTextNode("Nacho");
-	catTitleContainer2.appendChild(catTitleElement2);
-    catTitleElement2.appendChild(catTitleText2);
-	catTitleContainer2.setAttribute("id", "cat-title-2");
-	catTitleContainer2.setAttribute("class", "cat-title");
-	var list2 = document.getElementById("cat-2");
-    list2.insertBefore(catTitleContainer2, list2.childNodes[0]);
-}
-window.addEventListener("load", catTitle2, false);
-
+	
 // Third Cat Click function
 
  var clicks3 = 0;
