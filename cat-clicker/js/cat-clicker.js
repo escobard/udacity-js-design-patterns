@@ -165,19 +165,50 @@ window.addEventListener("load", cat3, false);
         document.getElementById("clicks4").innerHTML = clicks4;
     };
 
-// Fourth Cat Title function	
-function catTitle4() {
-	var catTitleContainer4 = document.createElement("div");
-    var catTitleElement4 = document.createElement("H1");
-    var catTitleText4 = document.createTextNode("Pooper");
-	catTitleContainer4.appendChild(catTitleElement4);
-    catTitleElement4.appendChild(catTitleText4);
-	catTitleContainer4.setAttribute("id", "cat-title-4");
-	catTitleContainer4.setAttribute("class", "cat-title");
-	var list4 = document.getElementById("cat-4");
-    list4.insertBefore(catTitleContainer4, list4.childNodes[0]);
+// Fourth Cat function
+	
+function cat4() {
+	
+// Variables
+var catTitleContainer4 = document.createElement("div");
+var catTitleElement4 = document.createElement("H1");
+var catTitleText4 = document.createTextNode('Stinky');
+var catContainerIntro4 = document.createElement("p")
+var catContainerIntroText4 = document.createTextNode("Click the image below to increase your click count.")
+var catContainerImg4 = document.createElement("img")
+var list4 = document.getElementById("cat-4");
+var catClickContainer4 = document.createElement("div");
+var catSecondaryTitleElement4 = document.createElement("H2");
+var catSecondaryTitleText4 = document.createTextNode('Clicks:');
+var catClickCounter4 = document.createElement("span")
+var catClickNumber4 = document.createTextNode('0');
+
+// Attributes
+catContainerIntro4.setAttribute("class", "cat-title");
+catTitleContainer4.setAttribute("id", "cat-title-3");
+catTitleContainer4.setAttribute("class", "cat-title");
+catContainerImg4.setAttribute("src", "img/cat2-picture.jpg");
+catContainerImg4.setAttribute("onClick", "catClicked4()");
+catClickCounter4.setAttribute("id", "clicks4");
+catClickContainer4.setAttribute("class", "click-container");
+
+// Append childs
+catContainerIntro4.appendChild(catContainerIntroText4);
+catTitleContainer4.appendChild(catTitleElement4);
+catTitleElement4.appendChild(catTitleText4);
+catSecondaryTitleElement4.appendChild(catSecondaryTitleText4);
+catSecondaryTitleElement4.appendChild(catClickCounter4);
+catClickCounter4.appendChild(catClickNumber4);
+catClickContainer4.appendChild(catSecondaryTitleElement4);
+
+// Nodes
+list4.insertBefore(catClickContainer4, list4.childNodes[0])
+list4.insertBefore(catContainerImg4, list4.childNodes[0])	
+list4.insertBefore(catContainerIntro4, list4.childNodes[0]);
+list4.insertBefore(catTitleContainer4, list4.childNodes[0]); 
+
 }
-window.addEventListener("load", catTitle4, false);
+window.addEventListener("load", cat4, false);
 
 // Fifth Cat Click function
 
