@@ -103,7 +103,52 @@ window.addEventListener("load", cat2, false);
         clicks2 += 1;
         document.getElementById("clicks2").innerHTML = clicks2;
     };
+
+// Third Cat function
 	
+function cat3() {
+	
+// Variables
+var catTitleContainer3 = document.createElement("div");
+var catTitleElement3 = document.createElement("H1");
+var catTitleText3 = document.createTextNode('Pooper');
+var catContainerIntro3 = document.createElement("p")
+var catContainerIntroText3 = document.createTextNode("Click the image below to increase your click count.")
+var catContainerImg3 = document.createElement("img")
+var list3 = document.getElementById("cat-3");
+var catClickContainer3 = document.createElement("div");
+var catSecondaryTitleElement3 = document.createElement("H2");
+var catSecondaryTitleText3 = document.createTextNode('Clicks:');
+var catClickCounter3 = document.createElement("span")
+var catClickNumber3 = document.createTextNode('0');
+
+// Attributes
+catContainerIntro3.setAttribute("class", "cat-title");
+catTitleContainer3.setAttribute("id", "cat-title-3");
+catTitleContainer3.setAttribute("class", "cat-title");
+catContainerImg3.setAttribute("src", "img/cat2-picture.jpg");
+catContainerImg3.setAttribute("onClick", "catClicked3()");
+catClickCounter3.setAttribute("id", "clicks3");
+catClickContainer3.setAttribute("class", "click-container");
+
+// Append childs
+catContainerIntro3.appendChild(catContainerIntroText3);
+catTitleContainer3.appendChild(catTitleElement3);
+catTitleElement3.appendChild(catTitleText3);
+catSecondaryTitleElement3.appendChild(catSecondaryTitleText3);
+catSecondaryTitleElement3.appendChild(catClickCounter3);
+catClickCounter3.appendChild(catClickNumber3);
+catClickContainer3.appendChild(catSecondaryTitleElement3);
+
+// Nodes
+list3.insertBefore(catClickContainer3, list3.childNodes[0])
+list3.insertBefore(catContainerImg3, list3.childNodes[0])	
+list3.insertBefore(catContainerIntro3, list3.childNodes[0]);
+list3.insertBefore(catTitleContainer3, list3.childNodes[0]); 
+
+}
+window.addEventListener("load", cat3, false);
+
 // Third Cat Click function
 
  var clicks3 = 0;
@@ -111,20 +156,6 @@ window.addEventListener("load", cat2, false);
         clicks3 += 1;
         document.getElementById("clicks3").innerHTML = clicks3;
     };
-
-// Third Cat Title function	
-function catTitle3() {
-	var catTitleContainer3 = document.createElement("div");
-    var catTitleElement3 = document.createElement("H1");
-    var catTitleText3 = document.createTextNode("Pooper");
-	catTitleContainer3.appendChild(catTitleElement3);
-    catTitleElement3.appendChild(catTitleText3);
-	catTitleContainer3.setAttribute("id", "cat-title-3");
-	catTitleContainer3.setAttribute("class", "cat-title");
-	var list3 = document.getElementById("cat-3");
-    list3.insertBefore(catTitleContainer3, list3.childNodes[0]);
-}
-window.addEventListener("load", catTitle3, false);
 
 // Fourth Cat Click function
 
