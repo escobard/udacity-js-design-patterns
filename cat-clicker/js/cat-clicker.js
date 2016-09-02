@@ -157,14 +157,6 @@ window.addEventListener("load", cat3, false);
         document.getElementById("clicks3").innerHTML = clicks3;
     };
 
-// Fourth Cat Click function
-
- var clicks4 = 0;
-    function catClicked4() {
-        clicks4 += 1;
-        document.getElementById("clicks4").innerHTML = clicks4;
-    };
-
 // Fourth Cat function
 	
 function cat4() {
@@ -210,6 +202,59 @@ list4.insertBefore(catTitleContainer4, list4.childNodes[0]);
 }
 window.addEventListener("load", cat4, false);
 
+// Fourth Cat Click function
+
+ var clicks4 = 0;
+    function catClicked4() {
+        clicks4 += 1;
+        document.getElementById("clicks4").innerHTML = clicks4;
+    };
+
+// Fifth Cat function
+	
+function cat5() {
+	
+// Variables
+var catTitleContainer5 = document.createElement("div");
+var catTitleElement5 = document.createElement("H1");
+var catTitleText5 = document.createTextNode('Roger');
+var catContainerIntro5 = document.createElement("p")
+var catContainerIntroText5 = document.createTextNode("Click the image below to increase your click count.")
+var catContainerImg5 = document.createElement("img")
+var list5 = document.getElementById("cat-5");
+var catClickContainer5 = document.createElement("div");
+var catSecondaryTitleElement5 = document.createElement("H2");
+var catSecondaryTitleText5 = document.createTextNode('Clicks:');
+var catClickCounter5 = document.createElement("span")
+var catClickNumber5 = document.createTextNode('0');
+
+// Attributes
+catContainerIntro5.setAttribute("class", "cat-title");
+catTitleContainer5.setAttribute("id", "cat-title-3");
+catTitleContainer5.setAttribute("class", "cat-title");
+catContainerImg5.setAttribute("src", "img/cat2-picture.jpg");
+catContainerImg5.setAttribute("onClick", "catClicked5()");
+catClickCounter5.setAttribute("id", "clicks5");
+catClickContainer5.setAttribute("class", "click-container");
+
+// Append childs
+catContainerIntro5.appendChild(catContainerIntroText5);
+catTitleContainer5.appendChild(catTitleElement5);
+catTitleElement5.appendChild(catTitleText5);
+catSecondaryTitleElement5.appendChild(catSecondaryTitleText5);
+catSecondaryTitleElement5.appendChild(catClickCounter5);
+catClickCounter5.appendChild(catClickNumber5);
+catClickContainer5.appendChild(catSecondaryTitleElement5);
+
+// Nodes
+list5.insertBefore(catClickContainer5, list5.childNodes[0])
+list5.insertBefore(catContainerImg5, list5.childNodes[0])	
+list5.insertBefore(catContainerIntro5, list5.childNodes[0]);
+list5.insertBefore(catTitleContainer5, list5.childNodes[0]); 
+
+}
+window.addEventListener("load", cat5, false);
+
 // Fifth Cat Click function
 
  var clicks5 = 0;
@@ -217,19 +262,3 @@ window.addEventListener("load", cat4, false);
         clicks5 += 1;
         document.getElementById("clicks5").innerHTML = clicks5;
     };
-
-// Fourth Cat Title function	
-function catTitle5() {
-	var catTitleContainer5 = document.createElement("div");
-    var catTitleElement5 = document.createElement("H1");
-    var catTitleText5 = document.createTextNode("Pooper");
-	catTitleContainer5.appendChild(catTitleElement5);
-    catTitleElement5.appendChild(catTitleText5);
-	catTitleContainer5.setAttribute("id", "cat-title-5");
-	catTitleContainer5.setAttribute("class", "cat-title");
-	var list5 = document.getElementById("cat-5");
-    list5.insertBefore(catTitleContainer5, list5.childNodes[0]);
-}
-window.addEventListener("load", catTitle5, false);
-
-
