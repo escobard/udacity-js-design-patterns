@@ -177,7 +177,7 @@ var catClickNumber4 = document.createTextNode('0');
 
 // Attributes
 catContainerIntro4.setAttribute("class", "cat-title");
-catTitleContainer4.setAttribute("id", "cat-title-3");
+catTitleContainer4.setAttribute("id", "cat-title-4");
 catTitleContainer4.setAttribute("class", "cat-title");
 catContainerImg4.setAttribute("src", "img/cat2-picture.jpg");
 catContainerImg4.setAttribute("onClick", "catClicked4()");
@@ -230,7 +230,7 @@ var catClickNumber5 = document.createTextNode('0');
 
 // Attributes
 catContainerIntro5.setAttribute("class", "cat-title");
-catTitleContainer5.setAttribute("id", "cat-title-3");
+catTitleContainer5.setAttribute("id", "cat-title-5");
 catTitleContainer5.setAttribute("class", "cat-title");
 catContainerImg5.setAttribute("src", "img/cat2-picture.jpg");
 catContainerImg5.setAttribute("onClick", "catClicked5()");

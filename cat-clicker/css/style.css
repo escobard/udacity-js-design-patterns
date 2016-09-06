@@ -1,3 +1,4 @@
+/* Structure styles */
 .jumbotron {
     max-width: 760px;
     float: none;
@@ -16,18 +17,21 @@
 	margin-top:20px;
 }
 
+/* Structure styles end */
+
 .jumbotron img {margin-top: 20px;margin-bottom: 20px;cursor: pointer;max-width: 100%;}
 
 .nav.nav-pills.pull-right {
     margin-top: 8px;
 }
+
+/* Cat styles */
+
 #clicks {
     color: #2196F3;
-    font-weight: bold;
 }
 #clicks2 {
 	    color: #E91E63;
-	    font-weight: bold;
 }#cat-title-1 {
     color: #4CAF50;
 }
@@ -39,3 +43,32 @@
 #cat-title-2 {
     color: #795548;
 }
+#cat-title-3 h1 {
+    color: #3F51B5;
+}
+span#clicks3 {
+    color: #4CAF50;
+}
+
+#cat-title-4 h1 {
+    color: #00BCD4;
+}
+
+span#clicks4 {
+    color: #795548;
+}
+
+.click-container span {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#cat-title-5 h1 {
+    color: #009688;
+}
+
+span#clicks5 {
+    color: #FF9800;
+}
+
+/* Cat styles end */
