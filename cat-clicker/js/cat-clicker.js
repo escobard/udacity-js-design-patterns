@@ -1,5 +1,50 @@
 // Cat Ojects and cat menu functions - cat clicker premium v2
 
+// Variable for the cat Menu structure.
+function catMenu() {
+	
+var catTitleContainer = document.createElement("div");
+var catTitleElement = document.createElement("H2");
+var catTitleText = document.createTextNode('Click on any of the buttons to reveal a cat.');
+var catContainerIntroText = document.createTextNode("Click the image below to increase your click count.")
+var catContainerImg = document.createElement("ul")
+var catMenuItem1 = document.createElement("li")
+var catMenuItem2 = document.createElement("li")
+var list = document.getElementById("cat-container");
+
+var divs = [
+  createDiv("foo"),
+  createDiv("bar"),
+  createDiv("baz")
+];
+
+var docFrag = document.createDocumentFragment();
+for(var i = 0; i < divs.length; i++) {
+  docFrag.appendChild(divs[i]); // Note that this does NOT go to the DOM
+}
+function createDiv(text) {
+  var div = document.createElement("li");
+  div.appendChild(document.createTextNode(text));
+  return div;
+}
+document.body.appendChild(docFrag); // Appends all divs at once
+// Attributes
+catTitleContainer.setAttribute("id", "cat-title-1");
+catTitleContainer.setAttribute("class", "cat-title");
+catContainerImg.setAttribute("src", "img/cat-picture.jpg");
+catContainerImg.setAttribute("onClick", "catClicked()");
+
+// Append childs
+catTitleContainer.appendChild(catTitleElement);
+catTitleElement.appendChild(catTitleText);
+catContainerImg.appendChild(catMenuItem1);
+
+// Nodes
+list.insertBefore(catContainerImg, list.childNodes[0])	
+list.insertBefore(catTitleContainer, list.childNodes[0]); 
+
+}
+window.addEventListener("load", catMenu, false);
 
 // Cat Ojects and cat menu functions - cat clicker premium v2 end
 
