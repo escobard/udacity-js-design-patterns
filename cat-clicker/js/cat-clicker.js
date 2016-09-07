@@ -1,4 +1,4 @@
-// global container variables
+// Cat containers 
 
 // First Cat function	
 function cat1() {
@@ -262,3 +262,5 @@ window.addEventListener("load", cat5, false);
         clicks5 += 1;
         document.getElementById("clicks5").innerHTML = clicks5;
     };
+
+// Cat containers end
