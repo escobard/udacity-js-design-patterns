@@ -29,6 +29,7 @@ function catMenuItem(text) {
   var catMenuItemContainer = document.createElement("li");
   var catMenuItemButton = document.createElement("button");
   catMenuItemButton.setAttribute("id", text + "-button")
+  catMenuItemButton.setAttribute("class", "btn" + " btn-default")
 // append button children  
   catMenuItemContainer.appendChild(catMenuItemButton);
   var catMenuTitle = catMenuItemButton.appendChild(document.createTextNode(text));

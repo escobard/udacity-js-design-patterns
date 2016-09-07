@@ -4,6 +4,7 @@
     float: none;
     margin: auto;
     text-align: center;
+    min-height: 650px;
 }
 
 .header.clearfix {
@@ -72,3 +73,26 @@ span#clicks5 {
 }
 
 /* Cat styles end */
+
+/* Cat menu styles */
+
+ul.cat-menu {
+    float: none;
+    margin: auto;
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    width: fit-content;
+}
+
+ul.cat-menu li {
+    float: left;
+    padding: 0 5px;
+}
+
+ul.cat-menu li button {
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+/* Cat menu styles end */
