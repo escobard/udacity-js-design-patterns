@@ -1,4 +1,9 @@
-// Cat containers 
+// Cat Ojects and cat menu functions - cat clicker premium v2
+
+
+// Cat Ojects and cat menu functions - cat clicker premium v2 end
+
+// Cat containers - cat clicker premium v1 - depracated
 
 // First Cat function	
 function cat1() {

@@ -2,7 +2,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Cat clicker assignment for the JavaScript Design Patterns course Udacity ">
     <meta name="author" content="Daniel Escobar">
 
@@ -14,12 +13,7 @@
 	
 	<!-- Cat clicker main JS -->
 	<script src="js/cat-clicker.js" type="text/javascript"></script>
-	
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
   </head>
 
   <body>
@@ -33,16 +27,14 @@
         </nav>
         <h3 class="text-muted">Cat Clicker Premium - Udacity Prototype - v2.0</h3>
       </div>
-
-      <div class="jumbotron">
-	  <div id="cat-1">
-        <p class="lead">Click the image below to increase your click count.</p>
-        <img onClick="catClicked()" src="img/cat-picture.jpg"></img>
-		<h2>Clicks: <span id="clicks">0</span> </h2> </div>
-		<div id="cat-2">
-		<p class="lead">Click the image below to increase your click count.</p>
-        <img onClick="catClicked2()" src="img/cat2-picture.jpg"></img>
-		<h2>Clicks: <span id="clicks2">0</span> </h2> </div>
+      <div id="cat-container" class="jumbotron">
+	  <ul>
+			<li><button id="catButton1">Ollie</button></li>
+			<li><button id="catButton2">Nacho</button></li>
+			<li><button id="catButton3">Pooper</button></li>
+			<li><button id="catButton4">Stinky</button></li>
+			<li><button id="catButton5">Roger</button></li>
+		</ul>
 		</div>
       </div>
 
