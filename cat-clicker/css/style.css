@@ -17,7 +17,11 @@
     text-align: center;
 	margin-top:20px;
 }
-
+h3.main-title {
+    font-weight: bold;
+    color: #337ab7;
+    text-align: center;
+}
 /* Structure styles end */
 
 .jumbotron img {margin-top: 20px;margin-bottom: 20px;cursor: pointer;max-width: 100%;}
@@ -93,6 +97,8 @@ ul.cat-menu li {
 ul.cat-menu li button {
     font-weight: bold;
     padding: 10px 30px;
+    transition: all ease 1s;
 }
+
 
 /* Cat menu styles end */
