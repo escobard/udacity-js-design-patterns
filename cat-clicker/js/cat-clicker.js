@@ -39,8 +39,7 @@ function catMenuItem(text) {
 // Appends all catMenuItems at once
 
 // Attributes
-catTitleContainer.setAttribute("id", "cat-title-1");
-catTitleContainer.setAttribute("class", "cat-title");
+catTitleContainer.setAttribute("class", "cat-title-container");
 catMenuContainer.setAttribute("class", "cat-menu");
 catMenuContainer.appendChild(catMenuItemLength); 
 
