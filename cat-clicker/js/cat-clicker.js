@@ -114,25 +114,25 @@ function catLoad(){
 	catButtonOne.addEvent("click",
 	// sets the function to set object values
 	function(){
-		addCatInfo(this, "img/cat-picture.jpg", "CatOne");
+		addCatInfo(this, "img/cat-picture.jpg", "Ollie");
 	}
 	// binds this function and its values to the object variable name
 	.bind(catButtonOne));
 
 	catButtonTwo.addEvent("click", function(){
-		addCatInfo(this, "img/cat-picture2.jpg", "CatTwo");
+		addCatInfo(this, "img/cat-picture2.jpg", "Nacho");
 	}.bind(catButtonTwo));
 
 	catButtonThree.addEvent("click", function(){
-		addCatInfo(this, "img/cat-picture3.jpg", "CatThree");
+		addCatInfo(this, "img/cat-picture3.jpg", "Pooper");
 	}.bind(catButtonThree));
 
 	catButtonFour.addEvent("click", function(){
-		addCatInfo(this, "img/cat-picture4.jpg", "CatFour");
+		addCatInfo(this, "img/cat-picture4.jpg", "Stinky");
 	}.bind(catButtonFour));
 
 	catButtonFive.addEvent("click", function(){
-		addCatInfo(this, "img/cat-picture5.jpg", "CatFive");
+		addCatInfo(this, "img/cat-picture5.jpg", "Roger");
 	}.bind(catButtonFive));
 
 	// creates the variable that adds values to each CatButtonObject object 
