@@ -32,50 +32,19 @@ h3.main-title {
 
 /* Cat styles */
 
-#clicks {
+h1.cat-title  {
     color: #2196F3;
-}
-#clicks2 {
-	    color: #E91E63;
-}#cat-title-1 {
-    color: #4CAF50;
-}
-
-.cat-title h1 {
     font-weight: bold;
 }
-
-#cat-title-2 {
-    color: #795548;
-}
-#cat-title-3 h1 {
-    color: #3F51B5;
-}
-span#clicks3 {
-    color: #4CAF50;
-}
-
-#cat-title-4 h1 {
-    color: #00BCD4;
-}
-
-span#clicks4 {
-    color: #795548;
-}
-
 .click-container span {
     font-size: 1.1em;
     font-weight: bold;
 }
-
-#cat-title-5 h1 {
-    color: #009688;
+#catCount {
+    color: #E91E63;
+    font-weight: bold;
+    font-size: 30px;
 }
-
-span#clicks5 {
-    color: #FF9800;
-}
-
 /* Cat styles end */
 
 /* Cat menu styles */
@@ -83,7 +52,7 @@ span#clicks5 {
 ul.cat-menu {
     float: none;
     margin: auto;
-    display: block;
+    display: inline-block;
     list-style-type: none;
     padding: 0;
     width: fit-content;
