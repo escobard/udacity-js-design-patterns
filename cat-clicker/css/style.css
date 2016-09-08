@@ -79,3 +79,16 @@ ul.cat-menu li button {
 
 /* Cat menu styles end */
 
+/* Cat responsive styles */
+@media only screen and (max-width: 800px) and (min-width: 0px){
+
+ul.cat-menu li button {
+    width: 60px;
+    padding: 0;
+}
+
+ul.cat-menu li {
+    padding: 1px;
+}}
+
+/* Cat responsive styles end */
