@@ -55,4 +55,97 @@ list.insertBefore(catTitleContainer, list.childNodes[0]);
 }
 window.addEventListener("load", catMenu, false);
 
-// Cat Ojects and cat menu functions - cat clicker premium v2 end
+// Cat Objects and cat menu functions - cat clicker premium v2 end
+
+// Cat loader
+
+// used this to learn how to build objects https://discussions.udacity.com/t/honest-opinion-on-cat-clicker-5-cats/24532
+// thanks to this forum post, I have learned the importance of using objects for elements with similar attributes to build scalable apps.
+// full credit for the original code goes to User : PGS82
+
+function catLoad(){
+	// gets the 'catCount' div element, converts it into a variable. 
+	var catClick = document.getElementById("catCount");
+    
+	// creates the variable for cat button
+	var CatButtonObject = function(selector){
+	// creates a function for the selector variable
+	// defines the element ID of selector. 
+	this.element = document.getElementById(selector);
+	// defines the click count,
+		this.catClickCount = 0;
+	};
+    
+	// adds an event function for when a CatButtonObject object is clicked. Don't quite understand this, but will need to research more on prototype and events.
+	CatButtonObject.prototype.addEvent = function(event, fn){
+	//adds the event listener to the element which id's has been identified.
+		this.element.addEventListener(event, fn);
+	};	
+
+	// adds the object for a cat
+	var Cat = {
+		// adds the image value
+		image: document.getElementById("catImage"),
+		
+		// adds the title value
+		title: document.getElementById("catTitle"),
+		
+		// sets the source element for the image variable
+		setSrc: function(src){
+		
+		// sets the source for the image value
+			this.image.src = src;
+		},
+		
+		// sets variable to select the text of the title value
+		setTitleText: function(title){
+			this.title.innerHTML = title;
+		}
+	};
+
+	// Creates the objects for each cat button.
+	var catButtonOne = new CatButtonObject("Ollie-button");
+	var catButtonTwo = new CatButtonObject("Nacho-button");
+	var catButtonThree = new CatButtonObject("Pooper-button");
+	var catButtonFour = new CatButtonObject("Stinky-button");
+	var catButtonFive = new CatButtonObject("Roger-button");
+
+	//adds event for each cat button 	
+	catButtonOne.addEvent("click",
+	// sets the function to set object values
+	function(){
+		addCatInfo(this, "img/cat-picture.jpg", "CatOne");
+	}
+	// binds this function and its values to the object variable name
+	.bind(catButtonOne));
+
+	catButtonTwo.addEvent("click", function(){
+		addCatInfo(this, "img/cat-picture2.jpg", "CatTwo");
+	}.bind(catButtonTwo));
+
+	catButtonThree.addEvent("click", function(){
+		addCatInfo(this, "img/cat-picture3.jpg", "CatThree");
+	}.bind(catButtonThree));
+
+	catButtonFour.addEvent("click", function(){
+		addCatInfo(this, "img/cat-picture4.jpg", "CatFour");
+	}.bind(catButtonFour));
+
+	catButtonFive.addEvent("click", function(){
+		addCatInfo(this, "img/cat-picture5.jpg", "CatFive");
+	}.bind(catButtonFive));
+
+	// creates the variable that adds values to each CatButtonObject object 
+	function addCatInfo(selfElement, catSrc, catTitle){
+		// sets the value of the the setSrc variable, converting it into the catSrc variable 
+		Cat.setSrc(catSrc);
+		// sets the value of setTitleText variable, converting it into the catTitle variable
+		Cat.setTitleText(catTitle);
+		// increments the value of the catClickCount variable
+		selfElement.catClickCount++;
+		// sets the inner html value of the catClickCount variable to the number of clicks currently saved by the object.
+		catClick.innerHTML = selfElement.catClickCount;
+	}
+
+}
+window.addEventListener("load", catLoad, false);
