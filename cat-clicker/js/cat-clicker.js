@@ -1,4 +1,28 @@
-// Cat Ojects and cat menu functions - cat clicker premium v2
+// Cat clicker premium v2
+
+// Cat Container initiation	
+function catContainer() {
+	
+// variables
+
+var catTitleElement = document.createElement("H1");
+var catContainerImg = document.createElement("img")
+var list = document.getElementById("cat-container");
+var catSecondaryTitleElement = document.createElement("H3");
+
+// Attributes
+
+catContainerImg.setAttribute("id", "catImage");
+catTitleElement.setAttribute("id", "catTitle");
+catTitleElement.setAttribute("class", "cat-title");
+catSecondaryTitleElement.setAttribute("id", "catCount");
+
+// Nodes
+list.insertBefore(catSecondaryTitleElement, list.childNodes[0])
+list.insertBefore(catContainerImg, list.childNodes[0])	
+list.insertBefore(catTitleElement, list.childNodes[0]); 
+}
+window.addEventListener("load", catContainer, false);
 
 // Variable for the cat Menu structure.
 function catMenu() {
@@ -19,6 +43,7 @@ var catMenuItems = [
   catMenuItem("Stinky"),
   catMenuItem("Roger")
 ]
+
 // creates the loop for each value within the cat menu items array.
 for(var i = 0; i < catMenuItems.length; i++) {
   catMenuItemLength.appendChild(catMenuItems[i]);
@@ -43,7 +68,7 @@ catTitleContainer.setAttribute("class", "cat-title-container");
 catMenuContainer.setAttribute("class", "cat-menu");
 catMenuContainer.appendChild(catMenuItemLength); 
 
-// Append childs
+// Append children
 catTitleContainer.appendChild(catTitleElement);
 catTitleElement.appendChild(catTitleText);
 
@@ -56,11 +81,11 @@ window.addEventListener("load", catMenu, false);
 
 // Cat Objects and cat menu functions - cat clicker premium v2 end
 
-// Cat loader
-
 // used this to learn how to build objects https://discussions.udacity.com/t/honest-opinion-on-cat-clicker-5-cats/24532
 // thanks to this forum post, I have learned the importance of using objects for elements with similar attributes to build scalable apps.
 // full credit for the original code goes to User : PGS82
+
+// Cat loader
 
 function catLoad(){
 	// gets the 'catCount' div element, converts it into a variable. 
@@ -148,3 +173,4 @@ function catLoad(){
 
 }
 window.addEventListener("load", catLoad, false);
+
