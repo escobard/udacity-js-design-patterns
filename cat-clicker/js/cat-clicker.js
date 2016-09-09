@@ -7,16 +7,22 @@ function catContainer() {
 var catTitleElement = document.createElement("H1");
 var catContainerImg = document.createElement("img")
 var list = document.getElementById("cat-container");
-var catSecondaryTitleElement = document.createElement("H3");
+var catClicksContainer = document.createElement("H3");
+var catClicks = document.createElement("span");
 
 // Attributes
 catContainerImg.setAttribute("id", "catImage");
 catTitleElement.setAttribute("id", "catTitle");
 catTitleElement.setAttribute("class", "cat-title");
-catSecondaryTitleElement.setAttribute("id", "catCount");
+catClicksContainer.setAttribute("id", "catCountContainer");
+catClicks.setAttribute("id", "catCount");
+
+// Appends
+
 
 // Nodes
-list.insertBefore(catSecondaryTitleElement, list.childNodes[0])
+list.insertBefore(catClicks, list.childNodes[0])
+list.insertBefore(catClicksContainer, list.childNodes[0])
 list.insertBefore(catContainerImg, list.childNodes[0])	
 list.insertBefore(catTitleElement, list.childNodes[0]); 
 }
@@ -110,6 +116,9 @@ function catLoad(){
 		// adds the title value
 		title: document.getElementById("catTitle"),
 		
+		// adds the Current Clicks blurb
+		currentClicks: document.getElementById("catCountContainer"),
+		
 		// sets the source element for the image variable
 		setSrc: function(src){
 		
@@ -120,6 +129,9 @@ function catLoad(){
 		// sets variable to select the text of the title value
 		setTitleText: function(title){
 			this.title.innerHTML = title;
+		},	
+		setCurrentClicks: function(currentClicks){
+			this.currentClicks.innerHTML = currentClicks;
 		}
 	};
 
@@ -135,35 +147,37 @@ function catLoad(){
 	
 	// sets the function to set object values
 	function(){
-		addCatInfo(this, "img/cat-picture.jpg", "Ollie");
+		addCatInfo(this, "img/cat-picture.jpg", "Ollie", "Ollie Clicks");
 	}
 	// binds this function and its values to the object variable name
 	.bind(catButtonOne));
 
 	catButtonTwo.addEvent("click", function(){
-		addCatInfo(this, "img/cat-picture2.jpg", "Nacho");
+		addCatInfo(this, "img/cat-picture2.jpg", "Nacho", "Nacho Clicks");
 	}.bind(catButtonTwo));
 
 	catButtonThree.addEvent("click", function(){
-		addCatInfo(this, "img/cat-picture3.jpg", "Pooper");
+		addCatInfo(this, "img/cat-picture3.jpg", "Pooper", "Pooper Clicks");
 	}.bind(catButtonThree));
 
 	catButtonFour.addEvent("click", function(){
-		addCatInfo(this, "img/cat-picture4.jpg", "Stinky");
+		addCatInfo(this, "img/cat-picture4.jpg", "Stinky", "Stinky Clicks");
 	}.bind(catButtonFour));
 
 	catButtonFive.addEvent("click", function(){
-		addCatInfo(this, "img/cat-picture5.jpg", "Roger");
+		addCatInfo(this, "img/cat-picture5.jpg", "Roger", "Roger Clicks");
 	}.bind(catButtonFive));
 
 	// creates the variable that adds values to each CatButtonObject object 
-	function addCatInfo(selfElement, catSrc, catTitle){
+	function addCatInfo(selfElement, catSrc, catTitle, catClickObject ){
 		
 		// sets the value of the the setSrc variable, converting it into the catSrc variable 
 		Cat.setSrc(catSrc);
 		
 		// sets the value of setTitleText variable, converting it into the catTitle variable
 		Cat.setTitleText(catTitle);
+		
+		Cat.setCurrentClicks(catClickObject);
 		
 		// increments the value of the catClickCount variable
 		selfElement.catClickCount++;
