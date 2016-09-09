@@ -29,3 +29,33 @@ No.
 How many times have you clicked your cat?
 
 Over 9000.
+
+Reflections #3:
+
+How hard was it ?
+
+Hard.
+
+How do you feel about your code ?
+
+I feel very happy with the solution I came up with. I spend a lot of time on this one,(6+ hours) playing around with many solutions, some not scalable at all, others much more scalable. I used the forumn, stack overflow, wc3, and previous experience with JS to come up with a solid solution to this project. 
+
+Happy with your cat duplication ?
+
+Yes. It is efficient, and scalable. I do not have to copy lots of lines of HTML in order to generate the code I want, instead I can change 3 lines of javascript code to generate a single cat. 
+
+How many times have you clicked your cat?
+
+Over 18000.
+
+Are you happy with your code?
+
+Very. Although there can be some fixes, I am very happy with the end result of my code for this iteration of the assignment. 
+
+Are here any problems you can forsee with it?
+
+I will have a much harder time adding more html structure to the app if I want to keep generating most HTML via JS code instead of static HTML. It takes alot more time to write code to dynamically generate HTML than to actually write the code in HTML instead. 
+
+What would happen if I asked you for more changes?
+
+I would be delighted to deliver more changes to this app. I have learned a TREMENDOUS amount on code structure and scalability just from this assignment alone. 
