@@ -1,4 +1,9 @@
 $(function() {
+
+// THIS IS THE MODEL
+// On the Model, this is where all the data is stored. In most cases this would be a database, but this also means that the model is the part of the application that 
+// STORES data for and to the application.
+// Contains data from both the SERVER and the USER
 // creates the data object variable 
     var data = {
 
@@ -7,11 +12,18 @@ $(function() {
 // creates an empty array for data.pizzas
         pizzas: []
     };
+// MODEL END
 
+// THIS IS THE CONTROLLER
+// The model and the view never directly talk to each other.
+// The controller is the only thing that connects them.
+// On the Controller, connects the MODEL and the VIEW, and interacts with both of them to create the FUNCTIONALITY of the application. 
+// MVCs are created so that when the view is changed, or the model is changed, it does not disturb either of the two. 
 // creates the octopus object variable
     var octopus = {
 
 // creates the octopus.addPizza method function where:
+// This function is called by the View to add a pizza within the model (or stores the pizza data)
         addPizza: function() {
 
 // the variable thisID = is the value of the incremental addition of the data.lastID value
@@ -33,6 +45,8 @@ $(function() {
         },
 
 // create the octopus.removePizza method function that takes pizza as an argument where: 
+// also called by the view, when you click on the x on each actual pizza
+// add and remove pizza are the only method funtions within the controller that changes the model part of the application (or changes the data)
         removePizza: function(pizza) {
 
 // the variable clickedPizza = data.pizzas[pizza.id -1], so sets the id of the pizza array item method to 1 less
@@ -46,10 +60,16 @@ $(function() {
         },
 
 // creates the octopus.getVisiblePizzas method function that takes pizza as an argument where
+// this retrieves data from the model
+// in other terms, rather than the view directly asking the model for how many pizzas we have, it asks the controller, who then asks the model, and then tells
+// the view
         getVisiblePizzas: function() {
-
+// this doesn't actually return the pizzas to the view, it filters only the number of pizzas (and their id's) that are VISIBLE to the view
+// In other words, remove pizza does not actually delete pizzas, it simple changes each pizza.visible status to false. 
+// This function retrieves all pizzas that have the pizza'visible true status and returns them to the view. 
             var visiblePizzas = data.pizzas.filter(function(pizza) {
                 return pizza.visible;
+
             });
             return visiblePizzas;
         },
@@ -59,6 +79,10 @@ $(function() {
         }
     };
 
+// CONTROLLER END
+
+// VIEW BEGIN 
+// On view: Includes all DOM elements, input elements, buttons and images. in other words, the part of the application that contains the INTERFACE of the application
 // the view grabs elements from the DOM that we will use on other parts of the application. 
 // attempt to do this for all applications I build moving forward.
     var view = {
@@ -105,4 +129,7 @@ $(function() {
     };
 
     octopus.init();
-}());
+}
+// VIEW END
+
+());
